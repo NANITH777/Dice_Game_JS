@@ -54,3 +54,10 @@ main {
     font-weight: 300;
     margin-bottom: 1rem;
 }
+
+.score {
+    font-size: 8rem;
+    font-weight: 300;
+    color: #302ebf;
+    margin-bottom: auto;
+}
