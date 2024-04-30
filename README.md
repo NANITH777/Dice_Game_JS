@@ -1,1 +1,1 @@
-# Pig_Game_JS
+# Dice_Game_JS
