@@ -77,3 +77,25 @@ main {
 .player--active .current {
     opacity: 1;
 }
+
+.current {
+    background-color: #302ebf;
+    opacity: 0.8;
+    border-radius: 9px;
+    color: #fff;
+    width: 65%;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.75s;
+}
+
+.current-label {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    color: #ddd;
+}
+
+.current-score {
+    font-size: 3.5rem;
+}
