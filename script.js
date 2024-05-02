@@ -32,3 +32,36 @@ const init = function()
     player0El.classList.add('player--active');
     player1El.classList.remove('player--active');
 }
+
+// starting conditions
+init();
+
+
+// Rolling Dice Fonctionality
+btnRoll.addEventListener('click', function () 
+{
+    if(playing)
+    {
+        // generating a random dice number 
+        const dice = Math.trunc(Math.random() * 6) + 1;
+
+
+        // Display dice
+        diceEl.classList.remove('hidden');
+        diceEl.src = `dice-${dice}.png`;
+
+        // check for rolled 1  
+        if(dice !== 1)
+        {
+            // add dice to current score
+            currentScore += dice;
+            document.getElementById(`current--${activeplayer}`).textContent = currentScore;
+
+        }
+        else
+        {
+            
+        }
+    }
+
+})
