@@ -36,6 +36,14 @@ const init = function()
 // starting conditions
 init();
 
+const SwitchPlayer = function()
+{
+    currentScore = 0;
+    document.getElementById(`current--${activeplayer}`).textContent = currentScore;
+    activeplayer = activeplayer === 0 ? 1 : 0 ;
+    player0El.classList.toggle('player--active');
+    player1El.classList.toggle('player--active');
+}
 
 // Rolling Dice Fonctionality
 btnRoll.addEventListener('click', function () 
@@ -60,7 +68,8 @@ btnRoll.addEventListener('click', function ()
         }
         else
         {
-            
+            //switch to the next player
+            SwitchPlayer();
         }
     }
 
